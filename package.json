@@ -1,0 +1,22 @@
+{
+  "name": "pull-queue-case-study",
+  "private": true,
+  "description": "A pull-based job queue for rate-limited third-party APIs: Redis + BullMQ, per-org priority, provider-wide pauses.",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "docker compose up -d && turbo run dev",
+    "lint": "biome check .",
+    "check-types": "turbo run check-types",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.12",
+    "turbo": "^2.7.6",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
